@@ -44,7 +44,7 @@ tic mismatches and detail loss in highly degraded LR images.
 
 > **CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution**
 >
-> Bingwen Hu, Heng Liu, Zhedong Zheng, and Ping Liu
+> Bingwen Hu, Heng Liu*, Zhedong Zheng, and Ping Liu
 >
 >
 > 1 School of Computer Science and Technology, Anhui University of Technology
@@ -66,7 +66,7 @@ We test the codes in the following environments; other versions may also be comp
 ## Data Preparation
 Create a new directory data to store all the datasets.
 
-1. Downlaod the Mini-Ref-YouTube-VOS dataset and Mini-Ref-SAIL-VOS dataset from the [website](https://drive.google.com/drive/folders/1ZdrQY8gKKEmMoJxP13ZZ5_Qrc4hGoZUj?usp=sharing).
+1. Downlaod the [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset [Celeba](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [CoCo](https://cocodataset.org/#download) dataset  from the website.
 2. Put the dataset in the `./data` folder.
 ```
 dataset
@@ -99,26 +99,19 @@ python testts.py
 
 
 ## Acknowledgement
-This repo is based on [ReferFormer](https://github.com/wjn922/ReferFormer) and [DANet](https://github.com/scutpaul/DANet). Thanks for these outstanding works.
+This repo is based on [CLIP](https://github.com/openai/CLIP) ,The birds, celeba and coco datasets were used. Thanks for these outstanding works.
 
 ## Citation
 
 ```
-@article{Heng_2025_IJCV,
-  title={Few-Shot Referring Video Single- and Multi-Object Segmentation via Cross-Modal Affinity with Instance Sequence Matching},
-  author={Heng Liu, Guanghui Li, Mingqi Gao, Heng Liu, Xiantong Zhen, Feng Zheng, Yang Wang},
-  journal={International Journal of Computer Vision},
+@article{Hu_2025_Tmm,
+  title={CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution},
+  author={Bingwen Hu, Heng Liu*, Zhedong Zheng, and Ping Liu},
+  journal={IEEE Transactions on Multimedia},
   year={2025}
 }
 
-@InProceedings{Li_2023_ICCV,
-    author    = {Li, Guanghui and Gao, Mingqi and Liu, Heng and Zhen, Xiantong and Zheng, Feng},
-    title     = {Learning Cross-Modal Affinity for Referring Video Object Segmentation Targeting Limited Samples},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {2684-2693}
-}
+
 ```
 
 

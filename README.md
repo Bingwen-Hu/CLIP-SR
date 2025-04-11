@@ -68,7 +68,7 @@ R-DGAE, MAGCN and GMM-VGAE.
 
 ### X16
 <p align="center">
-  <img width="800" height="600" src="docs/p1.png"/>
+  <img width="800" height="600" src="docs/p2.png"/>
 </p>
 
 ### Comparison
@@ -122,14 +122,14 @@ python testts.py
 
 
 ## Acknowledgement
-This repo is based on [CLIP](https://github.com/openai/CLIP) ,The birds, celeba and coco datasets were used. Thanks for these outstanding works.
+This repo is based on [CLIP](https://github.com/openai/CLIP) ,The Birds, Celeba and Coco datasets were used. Thanks for these outstanding works.
 
 ## Citation
 
 ```
 @article{Hu_2025_Tmm,
   title={CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution},
-  author={Bingwen Hu, Heng Liu*, Zhedong Zheng, and Ping Liu},
+  author={Bingwen Hu, Heng Liu, Zhedong Zheng, and Ping Liu},
   journal={IEEE Transactions on Multimedia},
   year={2025}
 }

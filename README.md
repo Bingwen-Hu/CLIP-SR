@@ -49,10 +49,9 @@ tic mismatches and detail loss in highly degraded LR images.
 >
 > 1 School of Computer Science and Technology, Anhui University of Technology
 > 
-> 2 Department of Computer Science and Engineering, Southern University of Science and Technology
+> 2  FST and ICI,University of Macau
 > 
-> 3 School of Computer Science and Information Engineering, Hefei University of Technology
-
+> 3  Department of Computer Science and Engineering,University of Nevada
 
 ## Requirements
 
@@ -89,13 +88,13 @@ data
 
 ### Training
 ```
-./scripts/train_ytvos.sh [/path/to/output_dir] [/path/to/pretrained_weight] --backbone [backbone]  --group 1
+python train.py --pretrained_model_path='your model' --state_epoch=10 --batch_size=32>my.log
 ```
 
 ### Inference & Evaluation
 
 ```
-python test.py --dataset_file mini-ytvos --group 1
+python test.py 
 ```
 
 

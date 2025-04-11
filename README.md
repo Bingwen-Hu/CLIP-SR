@@ -69,19 +69,19 @@ Create a new directory data to store all the datasets.
 1. Downlaod the Mini-Ref-YouTube-VOS dataset and Mini-Ref-SAIL-VOS dataset from the [website](https://drive.google.com/drive/folders/1ZdrQY8gKKEmMoJxP13ZZ5_Qrc4hGoZUj?usp=sharing).
 2. Put the dataset in the `./data` folder.
 ```
-data
-├─ Mini-Ref-YouTube-VOS
-│   ├─ meta_expressions
-│   └─ train
-│       ├─ Annotations
-│       ├─ JPEGImages
-│       └─ train.json
-├─ Mini-Ref-SAIL-VOS
-│   ├─ meta_expressions
-│   └─ train
-│       ├─ Annotations
-│       ├─ JPEGImages
-│       └─ train.json
+dataset
+├─ birds
+│   ├─ train
+│   ├─ test   
+│   └─ image
+├─ CA
+│   ├─ train
+│   ├─ test   
+│   └─ image
+├─ coco
+│   ├─ train
+│   ├─ test   
+│   └─ image
 
 ```
 
@@ -94,7 +94,7 @@ python train.py --pretrained_model_path='your model' --state_epoch=10 --batch_si
 ### Inference & Evaluation
 
 ```
-python test.py 
+python testts.py
 ```
 
 

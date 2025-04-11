@@ -10,7 +10,7 @@ CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution
 </div>
 
 
-<p align="center"><img src="docs/网络结构.png" width="800" height="400"/></p>
+<p align="center"><img src="docs/网络结构.png" width="800" height="300"/></p>
 
 
 
@@ -52,6 +52,25 @@ tic mismatches and detail loss in highly degraded LR images.
 > 2  FST and ICI,University of Macau
 > 
 > 3  Department of Computer Science and Engineering,University of Nevada
+
+# Results
+
+The visualization clustering comparisons on the Cora, Citeseer and Pubmed of our proposed approach with
+R-DGAE, MAGCN and GMM-VGAE.
+
+## Vid4 
+
+### Calendar 
+
+<p align="center">
+  <img width="960" height="290" src="figs/calendar.png"/>
+</p>
+
+### Foliage
+<p align="center">
+  <img width="960" height="290" src="figs/foliage.png"/>
+</p>
+
 
 ## Requirements
 

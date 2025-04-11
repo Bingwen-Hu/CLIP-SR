@@ -10,17 +10,41 @@ CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution
 </div>
 
 
-<p align="center"><img src="docs/figtotal.png" width="800" height="200"/></p>
+<p align="center"><img src="docs/网络结构.png" width="800" height="400"/></p>
 
 
 
 
 
-Referring Video Object Segmentation (RVOS) aims to segment specific objects in videos based on the provided natural language descriptions. As a new supervised visual learning task, achieving RVOS for a given scene requires a substantial amount of annotated data. However, only minimal annotations are usually available for new scenes in realistic scenarios. Another practical problem is that, apart from a single object, multiple objects of the same category coexist in the same scene. Both of these issues may significantly reduce the performance of existing RVOS methods in handling real-world applications. In this paper, we propose a simple yet effective model to address these issues by incorporating a newly designed cross-modal affinity (CMA) module based on a Transformer architecture. The CMA module facilitates the establishment of multi-modal affinity over a limited number of samples, allowing the rapid acquisition of new semantic information while fostering the model’s adaptability to diverse scenarios. Furthermore, we extend our FS-RVOS approach to multiple objects through a new instance sequence matching module over CMA, which filters out all object trajectories with similarity to language features that exceed a matching threshold, thereby achieving few-shot referring multi-object segmentation (FS-RVMOS). To foster research in this field, we establish a new dataset based on currently available datasets, which covers many scenarios in terms of single-object and multi-object data, hence effectively simulating real-world scenes. Extensive experiments and comparative analyses underscore the exceptional performance of our proposed FS-RVOS and FS-RVMOS methods. Our method consistently outperforms existing related approaches through practical performance evaluations and robustness studies, achieving optimal performance on metrics across diverse benchmark tests.
+Convolutional Neural Networks (CNNs) have ad
+vanced Image Super-Resolution (SR), but most CNN-based meth
+ods rely solely on pixel-based transformations, often leading to
+ artifacts and blurring, particularly with severe downsampling
+ (e.g., 8× or 16×). Recent text-guided SR methods attempt to
+ leverage textual information for enhanced detail, but they fre
+quently struggle with effective alignment, resulting in inconsistent
+ semantic coherence. To address these limitations, we introduce
+ a multi-modal semantic enhancement approach that combines
+ textual semantics with visual features, effectively tackling seman
+tic mismatches and detail loss in highly degraded LR images.
+ Our proposed multi-modal collaborative framework enables the
+ production of realistic and high-quality SR images at significant
+ up-scaling factors. The framework integrates text and image
+ inputs, employing a prompt predictor, Text-Image Fusion Block
+ (TIFBlock), and Iterative Refinement Module alongside CLIP
+ (Contrastive Language-Image Pretraining) features to guide a
+ progressive enhancement process with fine-grained alignment.
+ This alignment produces high-resolution outputs with crisp
+ details and semantic coherence, even at large scaling factors.
+ Through extensive comparative experiments and ablation studies,
+ we validate the effectiveness of our approach. Additionally, by
+ incorporating textual semantic guidance, our technique enables a
+ degree of super-resolution editability while maintaining semantic
+ coherence.
 
-> **Few-Shot Referring Video Single- and Multi-Object Segmentation via Cross-Modal Affinity with Instance Sequence Matching**
+> **CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution**
 >
-> Heng Liu 1, Guanghui Li 1, Mingqi Gao 2, Xiantong Zhen 2, Feng Zheng 2, Yang Wang* 3
+> Bingwen Hu, Heng Liu, Zhedong Zheng, and Ping Liu
 >
 >
 > 1 School of Computer Science and Technology, Anhui University of Technology
@@ -34,9 +58,9 @@ Referring Video Object Segmentation (RVOS) aims to segment specific objects in v
 
 We test the codes in the following environments; other versions may also be compatible:
 
-- CUDA 11.3 
-- Python 3.9
-- Pytorch 1.10.1
+- CUDA 11.6 
+- Python 3.10
+- Pytorch 1.11.0
 
 
 

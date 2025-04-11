@@ -1,0 +1,1 @@
+nohup python3 train.py --pretrained_model_path='/opt/data/private/workspace/GALIP-main/code/saved_models/coco/GALIP_nf64_normal_coco_256_2023_05_25_06_27_21' --state_epoch=10 --batch_size=8>>my.log

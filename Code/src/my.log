@@ -1,0 +1,207 @@
+6666666 
+
+<lib.datasets.TextImgDataset object at 0x7f17bfecd1f0>
+6666666 
+
+6666666 
+
+<lib.datasets.TextImgDataset object at 0x7f35f2578c70>
+6666666 
+
+6666666 
+
+<lib.datasets.TextImgDataset object at 0x7fc413d72f70>
+6666666 
+
+6666666 
+
+<lib.datasets.TextImgDataset object at 0x7f9d8e865c70>
+6666666 
+
+6666666 
+
+<lib.datasets.TextImgDataset object at 0x7fb530b5af70>
+6666666 
+
+6666666 
+
+<lib.datasets.TextImgDataset object at 0x7f319982ff10>
+6666666 
+
+/opt/data/private/carr/code/lib/datasets.py:126: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  df_bounding_boxes = pd.read_csv(bbox_path,
+/opt/data/private/carr/code/lib/datasets.py:132: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  pd.read_csv(filepath, delim_whitespace=True, header=None)
+/opt/data/private/carr/code/lib/datasets.py:126: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  df_bounding_boxes = pd.read_csv(bbox_path,
+/opt/data/private/carr/code/lib/datasets.py:132: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  pd.read_csv(filepath, delim_whitespace=True, header=None)
+/opt/data/private/CLIP-main/clip/clip.py:57: UserWarning: /root/.cache/clip/ViT-B-32.pt exists, but the SHA256 checksum does not match; re-downloading the file
+  warnings.warn(f"{download_target} exists, but the SHA256 checksum does not match; re-downloading the file")
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: /opt/data/private/carr/dataset/birds/train/filenames.pickle (8855)
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: /opt/data/private/carr/dataset/birds/test/filenames.pickle (2933)
+<class 'type'>
+  0%|                                               | 0.00/338M [00:00<?, ?iB/s]  0%|                                       | 160k/338M [00:00<03:39, 1.61MiB/s]  0%|                                       | 912k/338M [00:00<01:11, 4.95MiB/s]  1%|▌                                     | 4.72M/338M [00:00<00:21, 16.1MiB/s]  2%|▉                                     | 7.98M/338M [00:00<00:15, 22.0MiB/s]  3%|█▏                                    | 10.1M/338M [00:00<00:15, 21.7MiB/s]  4%|█▍                                    | 13.0M/338M [00:00<00:14, 24.2MiB/s]  5%|█▊                                    | 15.8M/338M [00:00<00:13, 25.9MiB/s]  6%|██▏                                   | 19.6M/338M [00:00<00:11, 30.0MiB/s]  7%|██▋                                   | 23.6M/338M [00:00<00:09, 33.3MiB/s]  8%|███                                   | 27.6M/338M [00:01<00:09, 36.0MiB/s]  9%|███▌                                  | 31.6M/338M [00:01<00:08, 37.8MiB/s] 11%|████                                  | 35.8M/338M [00:01<00:07, 39.6MiB/s] 12%|████▌                                 | 40.0M/338M [00:01<00:07, 40.8MiB/s] 13%|████▉                                 | 44.1M/338M [00:01<00:07, 41.6MiB/s] 14%|█████▍                                | 48.6M/338M [00:01<00:07, 43.1MiB/s] 16%|█████▉                                | 52.9M/338M [00:01<00:06, 43.7MiB/s] 17%|██████▍                               | 57.4M/338M [00:01<00:06, 44.6MiB/s] 18%|██████▉                               | 62.0M/338M [00:01<00:06, 45.6MiB/s] 20%|███████▍                              | 66.5M/338M [00:01<00:06, 46.0MiB/s] 21%|████████                              | 71.1M/338M [00:02<00:05, 46.9MiB/s] 22%|████████▌                             | 75.9M/338M [00:02<00:05, 47.7MiB/s] 24%|█████████                             | 80.6M/338M [00:02<00:05, 48.0MiB/s] 25%|█████████▌                            | 85.4M/338M [00:02<00:05, 48.9MiB/s] 27%|██████████▏                           | 90.3M/338M [00:02<00:05, 49.5MiB/s] 28%|██████████▋                           | 95.1M/338M [00:02<00:05, 49.6MiB/s] 30%|███████████▌                           | 100M/338M [00:02<00:04, 50.3MiB/s] 31%|████████████▏                          | 105M/338M [00:02<00:04, 50.9MiB/s] 33%|████████████▋                          | 110M/338M [00:02<00:04, 51.6MiB/s] 34%|█████████████▎                         | 115M/338M [00:02<00:04, 51.6MiB/s] 36%|█████████████▉                         | 120M/338M [00:03<00:04, 52.7MiB/s] 37%|██████████████▌                        | 126M/338M [00:03<00:04, 53.3MiB/s] 39%|███████████████                        | 131M/338M [00:03<00:04, 53.8MiB/s] 40%|███████████████▋                       | 136M/338M [00:03<00:03, 54.6MiB/s] 42%|████████████████▎                      | 142M/338M [00:03<00:03, 54.9MiB/s] 44%|████████████████▉                      | 147M/338M [00:03<00:03, 55.7MiB/s] 45%|█████████████████▋                     | 153M/338M [00:03<00:03, 56.4MiB/s] 47%|██████████████████▎                    | 158M/338M [00:03<00:03, 56.4MiB/s] 48%|██████████████████▉                    | 164M/338M [00:03<00:03, 56.9MiB/s] 50%|███████████████████▌                   | 169M/338M [00:03<00:03, 57.0MiB/s] 52%|████████████████████▏                  | 174M/338M [00:04<00:03, 44.3MiB/s] 53%|████████████████████▋                  | 179M/338M [00:04<00:03, 43.1MiB/s] 54%|█████████████████████▏                 | 184M/338M [00:04<00:03, 43.1MiB/s] 56%|█████████████████████▋                 | 188M/338M [00:04<00:03, 42.7MiB/s] 57%|██████████████████████▏                | 192M/338M [00:04<00:03, 43.0MiB/s] 58%|██████████████████████▋                | 196M/338M [00:04<00:03, 42.6MiB/s] 59%|███████████████████████▏               | 200M/338M [00:04<00:03, 43.0MiB/s] 61%|███████████████████████▋               | 205M/338M [00:04<00:03, 42.8MiB/s] 62%|████████████████████████▏              | 209M/338M [00:05<00:03, 43.3MiB/s] 63%|████████████████████████▋              | 213M/338M [00:05<00:02, 43.6MiB/s] 64%|█████████████████████████              | 217M/338M [00:05<00:02, 43.6MiB/s] 66%|█████████████████████████▌             | 222M/338M [00:05<00:02, 44.0MiB/s] 67%|██████████████████████████             | 226M/338M [00:05<00:02, 44.0MiB/s] 68%|██████████████████████████▌            | 230M/338M [00:05<00:02, 44.5MiB/s] 69%|███████████████████████████            | 235M/338M [00:05<00:02, 44.7MiB/s] 71%|███████████████████████████▌           | 239M/338M [00:05<00:02, 44.9MiB/s] 72%|████████████████████████████           | 243M/338M [00:05<00:02, 45.1MiB/s] 73%|████████████████████████████▌          | 248M/338M [00:05<00:02, 45.5MiB/s] 75%|█████████████████████████████          | 252M/338M [00:06<00:01, 45.3MiB/s] 76%|█████████████████████████████▌         | 256M/338M [00:06<00:02, 37.0MiB/s] 77%|██████████████████████████████         | 260M/338M [00:06<00:02, 36.5MiB/s] 78%|██████████████████████████████▍        | 264M/338M [00:06<00:02, 31.0MiB/s] 79%|██████████████████████████████▊        | 267M/338M [00:06<00:03, 18.8MiB/s] 80%|███████████████████████████████▏       | 269M/338M [00:07<00:04, 14.8MiB/s] 80%|███████████████████████████████▎       | 271M/338M [00:07<00:05, 12.8MiB/s] 81%|███████████████████████████████▌       | 273M/338M [00:07<00:05, 11.7MiB/s] 81%|███████████████████████████████▋       | 274M/338M [00:07<00:06, 10.8MiB/s] 82%|███████████████████████████████▊       | 276M/338M [00:07<00:06, 10.4MiB/s] 82%|███████████████████████████████▉       | 277M/338M [00:08<00:06, 10.0MiB/s] 82%|████████████████████████████████       | 278M/338M [00:08<00:06, 9.77MiB/s] 83%|████████████████████████████████▏      | 279M/338M [00:08<00:06, 9.59MiB/s] 83%|████████████████████████████████▎      | 280M/338M [00:08<00:06, 9.49MiB/s] 83%|████████████████████████████████▍      | 281M/338M [00:08<00:06, 9.39MiB/s] 83%|████████████████████████████████▌      | 281M/338M [00:08<00:06, 9.31MiB/s] 84%|████████████████████████████████▌      | 282M/338M [00:08<00:06, 9.27MiB/s] 84%|████████████████████████████████▋      | 283M/338M [00:08<00:06, 9.23MiB/s] 84%|████████████████████████████████▊      | 284M/338M [00:08<00:06, 9.27MiB/s] 84%|████████████████████████████████▉      | 285M/338M [00:09<00:05, 9.31MiB/s] 85%|█████████████████████████████████      | 286M/338M [00:09<00:05, 9.22MiB/s] 85%|█████████████████████████████████▏     | 287M/338M [00:09<00:05, 9.32MiB/s] 85%|█████████████████████████████████▏     | 288M/338M [00:09<00:05, 9.28MiB/s] 86%|█████████████████████████████████▎     | 289M/338M [00:09<00:05, 9.36MiB/s] 86%|█████████████████████████████████▍     | 290M/338M [00:09<00:05, 9.35MiB/s] 86%|█████████████████████████████████▌     | 291M/338M [00:09<00:05, 9.40MiB/s] 86%|█████████████████████████████████▋     | 291M/338M [00:09<00:05, 9.47MiB/s] 87%|█████████████████████████████████▊     | 292M/338M [00:09<00:05, 9.40MiB/s] 87%|█████████████████████████████████▉     | 293M/338M [00:09<00:04, 9.47MiB/s] 87%|█████████████████████████████████▉     | 294M/338M [00:10<00:04, 9.44MiB/s] 87%|██████████████████████████████████     | 295M/338M [00:10<00:04, 9.54MiB/s] 88%|██████████████████████████████████▏    | 296M/338M [00:10<00:04, 9.57MiB/s] 88%|██████████████████████████████████▎    | 297M/338M [00:10<00:04, 9.57MiB/s] 88%|██████████████████████████████████▍    | 298M/338M [00:10<00:04, 9.61MiB/s] 89%|██████████████████████████████████▌    | 299M/338M [00:10<00:04, 9.55MiB/s] 89%|██████████████████████████████████▋    | 300M/338M [00:10<00:04, 9.62MiB/s] 89%|██████████████████████████████████▋    | 301M/338M [00:10<00:04, 9.55MiB/s] 89%|██████████████████████████████████▊    | 302M/338M [00:10<00:03, 9.65MiB/s] 90%|██████████████████████████████████▉    | 303M/338M [00:10<00:03, 9.58MiB/s] 90%|███████████████████████████████████    | 303M/338M [00:11<00:03, 9.65MiB/s] 90%|███████████████████████████████████▏   | 304M/338M [00:11<00:03, 9.74MiB/s] 90%|███████████████████████████████████▎   | 305M/338M [00:11<00:03, 9.64MiB/s] 91%|███████████████████████████████████▍   | 306M/338M [00:11<00:03, 9.62MiB/s] 91%|███████████████████████████████████▍   | 307M/338M [00:11<00:03, 9.67MiB/s] 91%|███████████████████████████████████▌   | 308M/338M [00:11<00:03, 9.66MiB/s] 92%|███████████████████████████████████▋   | 309M/338M [00:11<00:03, 9.83MiB/s] 92%|███████████████████████████████████▊   | 310M/338M [00:11<00:02, 9.83MiB/s] 92%|███████████████████████████████████▉   | 311M/338M [00:11<00:02, 9.86MiB/s] 92%|████████████████████████████████████   | 312M/338M [00:11<00:02, 9.87MiB/s] 93%|████████████████████████████████████▏  | 313M/338M [00:12<00:02, 9.87MiB/s] 93%|████████████████████████████████████▎  | 314M/338M [00:12<00:02, 9.91MiB/s] 93%|████████████████████████████████████▍  | 315M/338M [00:12<00:02, 9.91MiB/s] 94%|████████████████████████████████████▍  | 316M/338M [00:12<00:02, 9.89MiB/s] 94%|████████████████████████████████████▌  | 317M/338M [00:12<00:02, 10.0MiB/s] 94%|████████████████████████████████████▋  | 318M/338M [00:12<00:02, 10.0MiB/s] 94%|████████████████████████████████████▊  | 319M/338M [00:12<00:01, 10.1MiB/s] 95%|████████████████████████████████████▉  | 320M/338M [00:12<00:01, 10.3MiB/s] 95%|█████████████████████████████████████  | 321M/338M [00:12<00:01, 10.2MiB/s] 95%|█████████████████████████████████████▏ | 322M/338M [00:13<00:01, 10.3MiB/s] 96%|█████████████████████████████████████▎ | 323M/338M [00:13<00:01, 10.3MiB/s] 96%|█████████████████████████████████████▍ | 324M/338M [00:13<00:01, 10.4MiB/s] 96%|█████████████████████████████████████▌ | 325M/338M [00:13<00:01, 10.4MiB/s] 97%|█████████████████████████████████████▋ | 326M/338M [00:13<00:01, 10.4MiB/s] 97%|█████████████████████████████████████▊ | 327M/338M [00:13<00:01, 10.5MiB/s] 97%|█████████████████████████████████████▉ | 328M/338M [00:13<00:00, 10.4MiB/s] 97%|██████████████████████████████████████ | 329M/338M [00:13<00:00, 10.6MiB/s] 98%|██████████████████████████████████████ | 330M/338M [00:13<00:00, 10.7MiB/s] 98%|██████████████████████████████████████▏| 331M/338M [00:13<00:00, 10.6MiB/s] 98%|██████████████████████████████████████▎| 332M/338M [00:14<00:00, 10.7MiB/s] 99%|██████████████████████████████████████▍| 333M/338M [00:14<00:00, 10.7MiB/s] 99%|██████████████████████████████████████▌| 334M/338M [00:14<00:00, 10.8MiB/s] 99%|██████████████████████████████████████▋| 335M/338M [00:14<00:00, 10.9MiB/s]100%|██████████████████████████████████████▊| 336M/338M [00:14<00:00, 10.9MiB/s]100%|██████████████████████████████████████▉| 337M/338M [00:14<00:00, 10.9MiB/s]100%|███████████████████████████████████████| 338M/338M [00:14<00:00, 24.3MiB/s]
+<class 'type'>
+Traceback (most recent call last):
+  File "/opt/data/private/carr/code/src/train.py", line 237, in <module>
+    main(args)
+  File "/opt/data/private/carr/code/src/train.py", line 108, in main
+    CLIP4trn, CLIP4evl, image_encoder, text_encoder, netG, netD, netC = prepare_models(args)
+  File "/opt/data/private/carr/code/lib/perpare.py", line 37, in prepare_models
+    NetG,NetD,NetC,CLIP_IMG_ENCODER,CLIP_TXT_ENCODER = choose_model(args.model)
+  File "/opt/data/private/carr/code/lib/utils.py", line 30, in choose_model
+    model = importlib.import_module(".%s"%(model), "models")
+  File "/opt/conda/envs/SR/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/data/private/carr/code/models/GALIP.py", line 9, in <module>
+    from .swin import SwinIR,RSTB
+  File "/opt/data/private/carr/code/models/swin.py", line 11, in <module>
+    from timm.models.layers import DropPath, to_2tuple, trunc_normal_
+ModuleNotFoundError: No module named 'timm'
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: /opt/data/private/carr/dataset/birds/train/filenames.pickle (8855)
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: /opt/data/private/carr/dataset/birds/test/filenames.pickle (2933)
+<class 'type'>
+<class 'type'>
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: /opt/data/private/carr/dataset/birds/train/filenames.pickle (8855)
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: /opt/data/private/carr/dataset/birds/test/filenames.pickle (2933)
+<class 'type'>
+<class 'type'>
+**************G_paras:  147509496
+**************D_paras:  30806021
+----finish---
+{'CONFIG_NAME': 'bird',
+ 'batch_size': 8,
+ 'cfg_file': '../cfg/birds.yml',
+ 'ch_size': 3,
+ 'clip4evl': {'src': 'clip', 'type': 'ViT-B/32'},
+ 'clip4text': {'src': 'clip', 'type': 'ViT-B/32'},
+ 'clip4trn': {'src': 'clip', 'type': 'ViT-B/32'},
+ 'cond_dim': 512,
+ 'cuda': True,
+ 'data_dir': '/opt/data/private/carr/dataset/birds',
+ 'dataset_name': 'birds',
+ 'device': device(type='cuda'),
+ 'gen_interval': 5,
+ 'gpu_id': 0,
+ 'growth_interval': 2000,
+ 'img_save_dir': '/opt/data/private/carr/code/imgs/bird/train/GALIP_nf64_normal_bird_256_2024_11_26_07_44_56',
+ 'imsize': 256,
+ 'local_rank': -1,
+ 'log_dir': 'new',
+ 'lr_d': 0.0004,
+ 'lr_g': 0.0001,
+ 'manual_seed': 100,
+ 'max_epoch': 101,
+ 'mixed_precision': False,
+ 'model': 'GALIP',
+ 'model_save_file': '/opt/data/private/carr/code/saved_models/bird/GALIP_nf64_normal_bird_256_2024_11_26_07_44_56',
+ 'multi_gpus': False,
+ 'nf': 64,
+ 'npz_path': '/opt/data/private/carr/code/saved_models/cele/GALIP_nf64_normal_cele_256_2024_11_21_13_43_13/state_epoch_080.pth',
+ 'num_workers': 1,
+ 'pretrained_model_path': '/opt/data/private/carr/code/saved_models/cele/GALIP_nf64_normal_cele_256_2024_11_22_14_10_23',
+ 'random_sample': True,
+ 'sample_times': 12,
+ 'save_interval': 20,
+ 'scaler': 4,
+ 'scaler_min': 64,
+ 'sim_w': 4.0,
+ 'stamp': 'normal',
+ 'state_epoch': 10,
+ 'test_interval': 5,
+ 'train': True,
+ 'z_dim': 512}
+Start Training
+The epoch 11 costs 271.34s
+****************************************
+The epoch 12 costs 183.26s
+****************************************
+The epoch 13 costs 193.11s
+****************************************
+The epoch 14 costs 200.38s
+****************************************
+--------------------- 17.77468325593983 -----------------------------
+The 15 epoch PSNR: 17.77
+The epoch 15 costs 1420.43s
+****************************************
+The epoch 16 costs 203.12s
+****************************************
+The epoch 17 costs 201.10s
+****************************************
+The epoch 18 costs 202.66s
+****************************************
+The epoch 19 costs 201.74s
+****************************************
+--------------------- 19.012944605503428 -----------------------------
+The 20 epoch PSNR: 19.01
+The epoch 20 costs 1582.41s
+****************************************
+The epoch 21 costs 201.76s
+****************************************
+The epoch 22 costs 201.55s
+****************************************
+The epoch 23 costs 202.10s
+****************************************
+The epoch 24 costs 203.16s
+****************************************
+--------------------- 18.515764094022103 -----------------------------
+The 25 epoch PSNR: 18.52
+The epoch 25 costs 1327.41s
+****************************************
+The epoch 26 costs 201.87s
+****************************************
+The epoch 27 costs 201.51s
+****************************************
+The epoch 28 costs 200.59s
+****************************************
+The epoch 29 costs 200.19s
+****************************************
+--------------------- 17.46278942185829 -----------------------------
+The 30 epoch PSNR: 17.46
+The epoch 30 costs 1390.95s
+****************************************
+The epoch 31 costs 196.05s
+****************************************
+The epoch 32 costs 198.15s
+****************************************
+The epoch 33 costs 196.45s
+****************************************
+The epoch 34 costs 197.25s
+****************************************
+--------------------- 18.513496589539447 -----------------------------
+The 35 epoch PSNR: 18.51
+The epoch 35 costs 1284.91s
+****************************************
+The epoch 36 costs 198.83s
+****************************************
+The epoch 37 costs 198.79s
+****************************************
+The epoch 38 costs 202.09s
+****************************************
+The epoch 39 costs 201.53s
+****************************************
+--------------------- 17.950165515644702 -----------------------------
+The 40 epoch PSNR: 17.95
+The epoch 40 costs 1490.88s
+****************************************
+The epoch 41 costs 201.11s
+****************************************
+The epoch 42 costs 202.41s
+****************************************
+The epoch 43 costs 200.90s
+****************************************
+The epoch 44 costs 200.87s
+****************************************

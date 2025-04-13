@@ -62,10 +62,10 @@ tic mismatches and detail loss in highly degraded LR images.
 ### X4 
 
 <p align="center">
-  <img width="800" height="600" src="docs/p1.png"/>
+  <img width="800" height="600" src="docs/1.png"/>
 </p>
 
-### X16
+
 <p align="center">
   <img width="800" height="600" src="docs/p2.png"/>
 </p>

@@ -55,8 +55,7 @@ tic mismatches and detail loss in highly degraded LR images.
 
 # Results
 
-The visualization clustering comparisons on the Cora, Citeseer and Pubmed of our proposed approach with
-R-DGAE, MAGCN and GMM-VGAE.
+
 
 
 

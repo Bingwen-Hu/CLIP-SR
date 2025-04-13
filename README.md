@@ -62,12 +62,12 @@ tic mismatches and detail loss in highly degraded LR images.
 ### X4 Comparison
 
 <p align="center">
-  <img width="800" height="600" src="docs/1.png"/>
+  <img width="800" height="350" src="docs/1.png"/>
 </p>
 
 
 <p align="center">
-  <img width="800" height="600" src="docs/p2.png"/>
+  <img width="800" height="350" src="docs/2.png"/>
 </p>
 
 

@@ -5,7 +5,7 @@
 
 Bingwen Hu<sup>1</sup> | Heng Liu*<sup>1</sup> | Zhedong Zheng<sup>2</sup> | Ping Liu<sup>3</sup> 
 
-<sup>1</sup>School of Computer Science and Technology, Anhui University of Technology, <sup>2</sup> FST and ICI,University of Macau,<sup>3</sup> Department of Computer Science and Engineering,University of Nevada
+<sup>1</sup>School of Computer Science and Technology, Anhui University of Technology, <sup>2</sup> FST and ICI,University of Macau, <sup>3</sup> Department of Computer Science and Engineering, University of Nevada
 
 
 

@@ -90,7 +90,7 @@ pip install -r requirements.txt
 - Downlaod the [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [COCO](https://cocodataset.org/#download) dataset  from the website. and put them into ``dataset``.
 ```
 dataset
-├─ birds
+├─ Birds
 │   ├─ train
 │   ├─ test
 │   ├─ text  
@@ -100,7 +100,7 @@ dataset
 │   ├─ test
 │   ├─ text  
 │   └─ image
-├─ coco
+├─ COCO
 │   ├─ train
 │   ├─ test   
 │   └─ text

@@ -49,12 +49,12 @@ tic mismatches and detail loss in highly degraded LR images.
 # Results
 
 <p align="center">
-  <img width="800" height="350" src="img/2.png"/>
+  <img width="700" height="300" src="img/2.png"/>
 </p>
 
 
 <p align="center">
-  <img width="800" height="350" src="img/1.png"/>
+  <img width="700" height="300" src="img/1.png"/>
 </p>
 
 

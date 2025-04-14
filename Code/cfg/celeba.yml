@@ -1,7 +1,7 @@
 CONFIG_NAME: 'cele'
 dataset_name: 'cele'
 # data_dir: '../../dataset/coco'
-data_dir: '/opt/data/private/carr/dataset/CA'
+data_dir: '/opt/data/private/carr/dataset/celeba'
 
 imsize: 256
 z_dim: 512

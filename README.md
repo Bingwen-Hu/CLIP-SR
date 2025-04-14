@@ -91,16 +91,18 @@ Create a new directory data to store all the datasets.
 dataset
 ├─ birds
 │   ├─ train
-│   ├─ test   
+│   ├─ test
+│   ├─ text  
 │   └─ image
 ├─ CA
 │   ├─ train
-│   ├─ test   
+│   ├─ test
+│   ├─ text  
 │   └─ image
 ├─ coco
 │   ├─ train
 │   ├─ test   
-│   └─ image
+│   └─ text
 
 ```
 

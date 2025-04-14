@@ -87,7 +87,7 @@ pip install -r requirements.txt
 
 #### Step 2: Prepare Datasets 
 - Create a new directory ``dataset`` .
-- Download  [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset, [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [COCO](https://cocodataset.org/#download) dataset  from the website. and put them into ``dataset``.
+- Download  [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset, [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [COCO](https://cocodataset.org/#download) dataset  from the website and put them into ``dataset``.
 ```
 dataset
 ├─ Birds

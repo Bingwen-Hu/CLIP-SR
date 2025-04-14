@@ -1,6 +1,6 @@
 CONFIG_NAME: 'bird'
 dataset_name: 'birds'
-data_dir: '/opt/data/private/carr/dataset/birds'
+data_dir: '/opt/data/private/carr/dataset/Birds'
 
 imsize: 256
 z_dim: 512

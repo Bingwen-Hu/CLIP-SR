@@ -1,13 +1,15 @@
+# CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution
 
-The official implementation of the IEEE TMM2025 paper: 
+[Paper]([https://arxiv.org/abs/2412.11609](https://arxiv.org/abs/2412.11609))
+<a href='https://arxiv.org/abs/2412.11609'><img src='https://img.shields.io/badge/arXiv-2412.11609-b31b1b.svg'></a> &nbsp;&nbsp;
 
-<div align="center">
-<h1>
-<b>
-CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution
-</b>
-</h1>
-</div>
+Bingwen Hu<sup>1</sup> | Heng Liu*<sup>1</sup> | Zhedong Zheng<sup>2</sup> | Ping Liu<sup>3</sup> 
+
+<sup>1</sup>School of Computer Science and Technology, Anhui University of Technology, <sup>2</sup> FST and ICI,University of Macau,<sup>3</sup> Department of Computer Science and Engineering,University of Nevada
+
+
+
+
 
 
 <p align="center"><img src="img/Net.png" width="800" height="400"/></p>
@@ -42,24 +44,9 @@ tic mismatches and detail loss in highly degraded LR images.
  degree of super-resolution editability while maintaining semantic
  coherence.
 
-> **CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution**
->
-> Bingwen Hu, Heng Liu*, Zhedong Zheng, and Ping Liu
->
->
-> 1 School of Computer Science and Technology, Anhui University of Technology
-> 
-> 2  FST and ICI,University of Macau
-> 
-> 3  Department of Computer Science and Engineering,University of Nevada
+
 
 # Results
-
-
-
-
-
-
 
 <p align="center">
   <img width="800" height="350" src="img/2.png"/>
@@ -80,7 +67,17 @@ We test the codes in the following environments; other versions may also be comp
 - Python 3.10
 - Pytorch 1.11.0
 
+## Installation
+```
+## git clone this repository
+https://github.com/hengliusky/CLIP-SR.git
+cd CLIP-SR
 
+# create an environment with python >= 3.10
+conda create -n clipsr python=3.10
+conda activate clipsr
+pip install -r requirements.txt
+```
 
 ## Data Preparation
 Create a new directory data to store all the datasets.
@@ -105,18 +102,48 @@ dataset
 │   └─ text
 
 ```
+## Inference
+#### Step 1: Download the pretrained models 
+- Download models from [Google Drive](https://Google Drive/) and put them into ``path``.
+
+
+#### Step 2: Prepare Datasets 
+- Create a new directory ``dataset`` to store all the datasets.
+- Downlaod the [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [CoCo](https://cocodataset.org/#download) dataset  from the website. and put them into ``dataset``.
+- Download pretrained XPSR model from [GoogleDrive](https://drive.google.com/drive/folders/1rzlHjp6DuiD7timULeDvmxSQignnMywS?usp=sharing) and put it into ``runs/xpsr``.
+```
+dataset
+├─ birds
+│   ├─ train
+│   ├─ test
+│   ├─ text  
+│   └─ image
+├─ CelebA
+│   ├─ train
+│   ├─ test
+│   ├─ text  
+│   └─ image
+├─ coco
+│   ├─ train
+│   ├─ test   
+│   └─ text
+
+
+
+#### Step 3: Run code
+```
+python test.py
+```
+You can modify the parameters in `configs/xpsr_test.yaml` to adapt to your specific need, such as the `guidance_scale` and the `num_inference_steps`.
+
 
 
 ### Training
 ```
-python train.py --pretrained_model_path='your model' --state_epoch=10 --batch_size=32>my.log
+python train.py --pretrained_model_path='model path' --state_epoch=10 --batch_size=32>my.log
 ```
 
-### Inference & Evaluation
 
-```
-python test.py
-```
 
 
 ## Acknowledgement

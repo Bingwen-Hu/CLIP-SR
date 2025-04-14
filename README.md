@@ -108,6 +108,7 @@ dataset
 
 #### Step 3: Run code
 ```
+cd ./Code/src
 python test.py
 ```
 
@@ -115,6 +116,7 @@ python test.py
 
 ### Train
 ```
+cd ./Code/src
 python train.py 
 ```
 

@@ -1,6 +1,6 @@
 # CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution
 
-[Paper]([https://arxiv.org/abs/2412.11609](https://arxiv.org/abs/2412.11609))
+[Paper](https://arxiv.org/abs/2412.11609)
 <a href='https://arxiv.org/abs/2412.11609'><img src='https://img.shields.io/badge/arXiv-2412.11609-b31b1b.svg'></a> &nbsp;&nbsp;
 
 Bingwen Hu<sup>1</sup> | Heng Liu*<sup>1</sup> | Zhedong Zheng<sup>2</sup> | Ping Liu<sup>3</sup> 

@@ -48,7 +48,7 @@ def parse_args():
 
     parser.add_argument('--model', type=str, default='net',
                         help='the model for training')
-    parser.add_argument('--state_epoch', type=int, default=210,
+    parser.add_argument('--state_epoch', type=int, default=220,
                         help='state epoch')
     parser.add_argument('--batch_size', type=int, default=1 ,
                         help='batch size')

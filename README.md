@@ -79,38 +79,15 @@ conda activate clipsr
 pip install -r requirements.txt
 ```
 
-## Data Preparation
-Create a new directory data to store all the datasets.
-
-1. Downlaod the [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset [Celeba](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [CoCo](https://cocodataset.org/#download) dataset  from the website.
-2. Put the dataset in the `./data` folder.
-```
-dataset
-├─ birds
-│   ├─ train
-│   ├─ test
-│   ├─ text  
-│   └─ image
-├─ CA
-│   ├─ train
-│   ├─ test
-│   ├─ text  
-│   └─ image
-├─ coco
-│   ├─ train
-│   ├─ test   
-│   └─ text
-
-```
 ## Inference
 #### Step 1: Download the pretrained models 
-- Download models from [Google Drive](https://Google Drive/) and put them into ``path``.
+- Create a new directory ``Pth`` .
+- Download pretrained CLIP-SR model from [Google Drive](https://GoogleDrive/) and put them into ``Pth``.
 
 
 #### Step 2: Prepare Datasets 
-- Create a new directory ``dataset`` to store all the datasets.
-- Downlaod the [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [CoCo](https://cocodataset.org/#download) dataset  from the website. and put them into ``dataset``.
-- Download pretrained XPSR model from [GoogleDrive](https://drive.google.com/drive/folders/1rzlHjp6DuiD7timULeDvmxSQignnMywS?usp=sharing) and put it into ``runs/xpsr``.
+- Create a new directory ``dataset`` .
+- Downlaod the [Birds](https://www.kaggle.com/datasets/wenewone/cub2002011) dataset [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) dataset and [COCO](https://cocodataset.org/#download) dataset  from the website. and put them into ``dataset``.
 ```
 dataset
 ├─ birds
@@ -127,27 +104,25 @@ dataset
 │   ├─ train
 │   ├─ test   
 │   └─ text
-
-
+```
 
 #### Step 3: Run code
 ```
 python test.py
 ```
-You can modify the parameters in `configs/xpsr_test.yaml` to adapt to your specific need, such as the `guidance_scale` and the `num_inference_steps`.
 
 
 
-### Training
+### Train
 ```
-python train.py --pretrained_model_path='model path' --state_epoch=10 --batch_size=32>my.log
+python train.py 
 ```
 
 
 
 
 ## Acknowledgement
-This repo is based on [CLIP](https://github.com/openai/CLIP) ,The Birds, Celeba and Coco datasets were used. We conducted a comparative experiment with [XPSR](https://github.com/qyp2000/XPSR) and [TGESR](https://github.com/KVGandikota/Text-guidedSR).Thanks for these outstanding works.
+This repo is based on [CLIP](https://github.com/openai/CLIP) ,The Birds, Celeba and COCO datasets were used. We conducted a comparative experiment with [XPSR](https://github.com/qyp2000/XPSR) and [TGESR](https://github.com/KVGandikota/Text-guidedSR).Thanks for these outstanding works.
 
 ## Citation
 

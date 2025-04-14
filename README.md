@@ -122,7 +122,7 @@ python train.py
 
 
 ## Acknowledgement
-This repo is based on [CLIP](https://github.com/openai/CLIP) ,The Birds, Celeba and COCO datasets were used. We conducted a comparative experiment with [XPSR](https://github.com/qyp2000/XPSR) 、 [TGESR](https://github.com/KVGandikota/Text-guidedSR)、[TGSR](https://github.com/cxm12/TGSR)、[DICGAN](https://github.com/Maclory/Deep-Iterative-Collaboration)、[CRAFT](https://github.com/AVC2-UESTC/CRAFT-SR/blob/main/README.md)、[SD](https://github.com/CompVis/latent-diffusion)、[ControlNet](https://github.com/Luis-kleinfeld/ControlNet). Thanks for these outstanding works.
+This repo is based on [CLIP](https://github.com/openai/CLIP) , The Birds, Celeba and COCO datasets were used. We conducted a comparative experiment with [XPSR](https://github.com/qyp2000/XPSR) ,  [TGESR](https://github.com/KVGandikota/Text-guidedSR), [TGSR](https://github.com/cxm12/TGSR), [DICGAN](https://github.com/Maclory/Deep-Iterative-Collaboration), [CRAFT](https://github.com/AVC2-UESTC/CRAFT-SR/blob/main/README.md), [SD](https://github.com/CompVis/latent-diffusion), [ControlNet](https://github.com/Luis-kleinfeld/ControlNet). Thanks for these outstanding works.
 
 ## Citation
 

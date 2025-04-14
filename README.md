@@ -127,13 +127,12 @@ This repo is based on [CLIP](https://github.com/openai/CLIP) ,The Birds, Celeba 
 ## Citation
 
 ```
-@article{Hu_2025_Tmm,
+@article{hu2024clip,
   title={CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution},
-  author={Bingwen Hu, Heng Liu, Zhedong Zheng, and Ping Liu},
-  journal={IEEE Transactions on Multimedia},
-  year={2025}
+  author={Hu, Bingwen and Liu, Heng and Zheng, Zhedong and Liu, Ping},
+  journal={arXiv preprint arXiv:2412.11609},
+  year={2024}
 }
-
 
 ```
 

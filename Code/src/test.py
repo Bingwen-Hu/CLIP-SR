@@ -37,7 +37,7 @@ import numpy as np
 def parse_args():
     # Training settings
     parser = argparse.ArgumentParser(description='Text2Img')
-    parser.add_argument('--cfg', dest='cfg_file', type=str, default='../cfg/birds.yml',
+    parser.add_argument('--cfg', dest='cfg_file', type=str, default='../cfg/Birds.yml',
                         help='optional config file')
     parser.add_argument('--num_workers', type=int, default=1,
                         help='number of workers(default: {0})'.format(mp.cpu_count() - 1))

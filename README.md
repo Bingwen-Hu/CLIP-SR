@@ -10,7 +10,7 @@ CLIP-SR: Collaborative Linguistic and Image Processing for Super-Resolution
 </div>
 
 
-<p align="center"><img src="docs/Net.png" width="800" height="400"/></p>
+<p align="center"><img src="img/Net.png" width="800" height="400"/></p>
 
 
 

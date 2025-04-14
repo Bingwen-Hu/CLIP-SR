@@ -43,7 +43,7 @@ def parse_args():
                         help='the model for training')
     parser.add_argument('--log_dir', type=str, default='new', 
                         help='file path to log directory')
-    parser.add_argument('--model', type=str, default='GALIP',
+    parser.add_argument('--model', type=str, default='net',
                         help='the model for training')
     parser.add_argument('--state_epoch', type=int, default=1,
                         help='state epoch')
@@ -69,22 +69,18 @@ def parse_args():
 
 def main(args):
 
-    #--------------------------------------模型，日志，图片保存路径------------------------------------
+    #--------------------------------------model,log,image save path------------------------------------
     time_stamp = get_time_stamp()
-    #2023_03_13_19_55_47
     stamp = '_'.join([str(args.model),'nf'+str(args.nf),str(args.stamp),str(args.CONFIG_NAME),str(args.imsize),time_stamp])
-    #GALIP_nf64_normal_bird_128_2023_03_13_19_57_41
     args.model_save_file = osp.join(ROOT_PATH, 'saved_models', str(args.CONFIG_NAME), stamp)
     log_dir = args.log_dir
     if log_dir == 'new':
 
         log_dir = osp.join(ROOT_PATH, 'logs/{0}'.format(osp.join(str(args.CONFIG_NAME), 'train', stamp)))
-        #G:\workspaces\GALIP-main\GALIP-main\code\logs/bird\train\GALIP_nf64_normal_bird_128_2023_03_13_19_58_44
 
         mkdir_p(log_dir)
 
     args.img_save_dir = osp.join(ROOT_PATH, 'imgs/{0}'.format(osp.join(str(args.CONFIG_NAME), 'train', stamp)))
-    #G:\workspaces\GALIP-main\GALIP-main\code\imgs/bird\train\GALIP_nf64_normal_bird_256_2023_03_15_09_30_59
     #------------------------------------------------------------------------------------------------------
     if (args.multi_gpus==True) and (get_rank() != 0):
         None
@@ -112,9 +108,6 @@ def main(args):
     print('**************else: ', params_count(CLIP4trn) + params_count(CLIP4evl)+ params_count(image_encoder)+ params_count(text_encoder))
     GT,LR, fixed_sent, fixed_words,fixed_z = get_fix_data(train_dl, valid_dl,text_encoder, args)
 
-    # 保存最佳模型逻辑
-    #best_psnr = -1  # 初始化最佳 PSNR 值
-   # best_model_path = osp.join(args.model_save_file, 'best_model.pth')  # 最优模型路径
 
     if (args.multi_gpus==True) and (get_rank() != 0):
         None
@@ -125,12 +118,11 @@ def main(args):
         img_save_path = osp.join(args.img_save_dir, img_name)
         LR_img_name="LR.png"
         LR_img_save_path = osp.join(args.img_save_dir, LR_img_name)
-        #G:\workspaces\GALIP-main\GALIP-main\code\imgs/bird\train\GALIP_nf64_normal_bird_128_2023_03_13_20_30_22\gt.png
         vutils.save_image(GT.data, img_save_path, nrow=8, normalize=True)
         vutils.save_image(LR, LR_img_save_path, nrow=8, normalize=True)
         print("----finish---")
 
-    # ############################prepare optimizer,设置学习率等=================================
+    # ############################prepare optimizer,set lr=================================
     D_params = list(netD.parameters()) + list(netC.parameters())
     optimizerD = torch.optim.Adam(D_params, lr=args.lr_d, betas=(0.0, 0.9))
     optimizerG = torch.optim.Adam(netG.parameters(), lr=args.lr_g, betas=(0.0, 0.9))
@@ -159,7 +151,6 @@ def main(args):
         arg_save_path = osp.join(log_dir, 'args.yaml')
         save_args(arg_save_path, args)
 
-        #G:\workspaces\GALIP-main\GALIP-main\code\logs/bird\train\GALIP_nf64_normal_bird_128_2023_03_13_20_41_16\args.yaml
 
         print("Start Training")
     # ===================================================================Start training
@@ -189,16 +180,11 @@ def main(args):
         
         # ============================================test===================================================
         if epoch%test_interval==0:
-            #------------计算PSNR的
+
             PSNR = test(valid_dl, text_encoder, netG,None, CLIP4evl, args.device, epoch, args.max_epoch, args.sample_times, args.z_dim, args.batch_size)
             torch.cuda.empty_cache()
             print("---------------------",PSNR,"-----------------------------")
 
-         # 保存最佳模型
-      #  if PSNR > best_psnr:
-       #     best_psnr = PSNR
-        #    save_models_opt(netG, netD, netC, optimizerG, optimizerD, epoch, args.multi_gpus, best_model_path)
-        #    print(f"New best model saved with PSNR: {PSNR:.2f} at epoch {epoch}")
 
         if (args.multi_gpus==True) and (get_rank() != 0):
             None

@@ -1,7 +1,7 @@
 CONFIG_NAME: 'coco'
 dataset_name: 'coco'
 # data_dir: '/opt/data/private/coco'
-data_dir: '/opt/data/private/carr/dataset/coco'
+data_dir: '/opt/data/private/carr/dataset/COCO'
 
 imsize: 256
 z_dim: 512

@@ -82,7 +82,7 @@ pip install -r requirements.txt
 ## Inference
 #### Step 1: Download the pretrained models 
 - Create a new directory ``Pth`` .
-- Download pretrained CLIP-SR model from [Google Drive](https://GoogleDrive/) and put them into ``Pth``.
+- Download pretrained CLIP-SR model from [Baidu Drive](https://pan.baidu.com/s/13SN6aNS4ehkek4qVPtVqiA?pwd=4zz7) and put them into ``Pth``.
 
 
 #### Step 2: Prepare Datasets 

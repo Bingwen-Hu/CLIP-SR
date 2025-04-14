@@ -59,7 +59,7 @@ tic mismatches and detail loss in highly degraded LR images.
 
 
 
-### X4 Comparison
+
 
 <p align="center">
   <img width="800" height="350" src="img/2.png"/>
@@ -120,7 +120,7 @@ python testts.py
 
 
 ## Acknowledgement
-This repo is based on [CLIP](https://github.com/openai/CLIP) ,The Birds, Celeba and Coco datasets were used. Thanks for these outstanding works.
+This repo is based on [CLIP](https://github.com/openai/CLIP) ,The Birds, Celeba and Coco datasets were used. We conducted a comparative experiment with [XPSR](https://github.com/qyp2000/XPSR) and [TGESR](https://github.com/KVGandikota/Text-guidedSR).Thanks for these outstanding works.
 
 ## Citation
 

@@ -115,7 +115,7 @@ python train.py --pretrained_model_path='your model' --state_epoch=10 --batch_si
 ### Inference & Evaluation
 
 ```
-python testts.py
+python test.py
 ```
 
 

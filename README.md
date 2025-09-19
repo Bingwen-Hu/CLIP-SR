@@ -139,6 +139,6 @@ This repo is based on [CLIP](https://github.com/openai/CLIP) , The Birds, Celeba
 ```
 ## Statement
 
-This paper has been accepted for publication in IEEE Transactions on Multimedia (TMM). The final version of the paper will be updated once the issue is published.
+This paper has been accepted for publication in IEEE Transactions on Multimedia (TMM 2025). The final version of the paper will be updated once the issue is published.
 
 
